@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batoify Registration Page</title>
+</head>
+<body>
+    <h1><b>Batoify Music Streaming Service Registration Form</b></h1>
+    <form>
+        <fieldset style="width: 300px;">
+        <legend><b>Please Fill the Form</b></legend>
+            <div>
+                <input type="text" placeholder="Name" required style="width: 250px;"/>
+            </div>
+            <div>
+                <input type="text" placeholder="Surname" required style="width: 250px;"/>
+            </div>
+            <div>
+                <input type="email" placeholder="E-Mail" required style="width: 250px;"/>
+            </div>
+            <div>
+                <input name="password" minlength="8" type="password" placeholder="Password (minimum length=8)" required style="width: 250px;"/>
+            </div>
+            <div>
+                <input name="password" minlength="8" type="password" placeholder="Password again (minimum length=8)" required style="width: 250px;"/>
+            </div>
+            <div>
+                <input type="date" placeholder="Date of Birth" required style="width: 250px;"/>
+            </div>
+            <div>
+            <input type="number" placeholder="Phone Number" required style="width: 250px;"/>
+            </div>
+        </fieldset>
+        <fieldset style="width: 300px;">
+                <legend><b>Music Preferences</b></legend>
+            <div>
+                <input type="checkbox" id="rock" name="rock" checked>
+                <label for="rock">Rock</label>
+            </div>
+            <div>
+                <input type="checkbox" id="metal" name="metal">
+                <label for="metal">Metal</label>
+            </div>
+            <div>
+                <input type="checkbox" id="blues" name="blues">
+                <label for="blues">Blues</label>
+            </div>
+            <div>
+                <input type="checkbox" id="rb" name="rb">
+                <label for="rb">R&B</label>
+            </div>
+            <div>
+                <input type="checkbox" id="hiphop" name="hiphop">
+                <label for="hiphop">Hip-Hop</label>
+            </div>
+            <div>
+                <input type="checkbox" id="electronic" name="electronic">
+                <label for="electronic">Electronic</label>
+            </div>
+        </fieldset>
+        <fieldset style="width: 300px;">
+            <div>
+                <legend><b>Terms of Service Agreement</b></legend>
+                <input type="radio" id="tosa" name="tosa" required>
+                <label for="tosa">Agree</label>
+            </div>
+            <div>
+                <input type="radio" id="tosa" name="tosa">
+                <label for="tosa">Disagree</label>
+            </div>
+        </fieldset>
+        <fieldset style="width: 300px;">
+            <div>
+                <input value="Send Registration" type="submit" id="submit" name="submit" onclick="alert('Registration Sent!')" style="width: 250px;">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
